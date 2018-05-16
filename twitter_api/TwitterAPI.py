@@ -1,11 +1,12 @@
 import tweepy
+from TwitterAPI_keys import consumer_key, consumer_secret, access_token, access_token_secret
 
 class TwitterAPI:
 
-    consumer_key = '?'
-    consumer_secret = '?'
-    access_token = '?'
-    access_token_secret = '?'
+    consumer_key = consumer_key
+    consumer_secret = consumer_secret
+    access_token = access_token
+    access_token_secret = access_token_secret
 
     def __init__(self):
         self.auth = tweepy.OAuthHandler(self.consumer_key, self.consumer_secret)
