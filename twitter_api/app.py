@@ -1,0 +1,17 @@
+import tweepy
+
+class TwitterAPI
+
+    consumer_key = 'SU1Dfyifja4iiIc81w3ZEQlCB'
+    consumer_secret = '5PQvvGbA3iIpzZqwwdRKVJMAjPtCAVGh477QMHUxg4nXC8auIz'
+    access_token = '996091583853481985-h7WPFVoDZiPTqEf5xIq3x5vkfOxOzPG'
+    access_token_secret = '8Ziudx0rwmioHXF9mSXJTa7tVKCucjMPM5Mp43uMefR5w'
+
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    api = tweepy.API(auth,wait_on_rate_limit=True)
+
+    for tweet in tweepy.Cursor(api.search,q="#unitedAIRLINES",count=100,
+                               lang="en",
+                               since="2017-04-03").items():
+        print (tweet.created_at, tweet.text)
