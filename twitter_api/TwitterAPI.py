@@ -18,5 +18,3 @@ class TwitterAPI:
                                    lang="en",
                                    since="2018-04-03").items():
             print (tweet.created_at, tweet.text)
-x = TwitterAPI()
-x.find_tweets_by_hashtag('#bitcoin')
