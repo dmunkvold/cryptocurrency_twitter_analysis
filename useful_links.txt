@@ -1,0 +1,7 @@
+Here are some useful links:
+
+TCN:
+https://medium.com/the-artificial-impostor/notes-understanding-tensorflow-part-3-7f6633fcc7c7
+
+1D Convolution:
+http://www.cs.cornell.edu/courses/cs1114/2013sp/sections/S06_convolution.pdf
