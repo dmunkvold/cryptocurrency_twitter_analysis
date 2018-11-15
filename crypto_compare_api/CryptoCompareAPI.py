@@ -2,8 +2,8 @@
 # path for python to look for modules in my 3.6 environment. this code
 # can be commented out in the case that cryptocompare imports correctly
 
-#import sys
-#sys.path.append('/Users/David/anaconda/envs/environment_for_py3/lib/python3.6/site-packages')
+import sys
+sys.path.append('/Users/David/anaconda/envs/environment_for_py3/lib/python3.6/site-packages')
 
 # the following is necessary code
 

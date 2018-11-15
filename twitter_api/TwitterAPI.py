@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/Users/David/anaconda/envs/environment_for_py3/lib/python3.6/site-packages')
+
 import tweepy
 from TwitterAPI_keys import consumer_key, consumer_secret, access_token, access_token_secret
 
