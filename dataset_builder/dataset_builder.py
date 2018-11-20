@@ -1,9 +1,5 @@
-#following two lines are only necessary in davids laptop environment
-import sys
-sys.path.append('/Users/David/Desktop/Dev/cryptocurrency_twitter_analysis')
-
-from twitter_api import TwitterAPI
-from crypto_compare_api import CryptoCompareAPI
+from twitter_api.twitter_api import TwitterAPI
+from crypto_compare_api.crypto_compare_api import CryptoCompareAPI
 
 class DataSetBuilder:
 
@@ -15,8 +11,8 @@ class DataSetBuilder:
         self.sample_set = [[],[]]
 
     def generate_data_set(self, start_date, num_samples, days_offset):
-        fetch_tweets(start_date, num_samples)
-        fetch_prices(days_offset)
+        self.fetch_tweets(start_date, num_samples)
+        self.fetch_prices(days_offset)
 
     def fetch_tweets(self, start_date, num_samples):
         for hashtag in self.hashtags:
